@@ -32,7 +32,7 @@ export default {
   position: relative;
   background: url('~@/assets/background/bl.png') no-repeat fixed bottom left, url('~@/assets/background/tr.png') no-repeat fixed top right, #f0f2f7;
   padding-top: 58px;
-  height: calc(100% - 69px);
+  min-height: calc(100% - 69px);
 
 
   .main-container {

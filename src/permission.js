@@ -18,6 +18,7 @@ const whiteList = [
   '/system-info',
   '/system-info/topbar1',
   '/system-info/topbar2',
+  '/solution/case-view',
   '/user-info'
 ]
 
@@ -46,7 +47,7 @@ router.beforeEach(async(to, from, next) => {
     if (hasPermission(store.getters.roles, to)) {
       next()
     } else {
-      next('/404')
+      next('/401')
     }
   } else {
     if (whiteList.indexOf(to.path) != -1) {

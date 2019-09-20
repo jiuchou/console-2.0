@@ -5,7 +5,7 @@
     :text-color="variables.menuText"
     :active-text-color="variables.menuActiveText"
     :unique-opened="true"
-    menu-trigger="click"
+    menu-trigger="hover"
     :collapse-transition="false"
     mode="horizontal"
   >
