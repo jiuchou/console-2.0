@@ -1,0 +1,23 @@
+// https://github.com/ElemeFE/element/issues/377
+
+.el-menu--popup {
+  padding: 0 10px;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.el-submenu__title {
+  color: #475669;
+  height: 58px;
+  line-height: 58px;
+
+  &:hover {
+    color: #009a61;
+    font-weight: bolder;
+  }
+}
+
+.el-submenu__icon-arrow {
+  color: #f0f2f7 !important;
+  right: 0;
+}
