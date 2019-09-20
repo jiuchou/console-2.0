@@ -6,21 +6,30 @@
     LongWripper
   Footerbar
   -->
-  <div>
+  <div class="app-wrapper">
     <topbar />
     <app-main />
+    <footerbar />
   </div>
 </template>
 
 <script>
-import { Topbar, AppMain } from './components/index'
+import { Topbar, AppMain, Footerbar } from './components/index'
 
 export default {
   name: 'Layout',
   components: {
     Topbar,
-    AppMain
+    AppMain,
+    Footerbar
   }
 }
 </script>
 
+<style lang="scss" scoped>
+.app-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+</style>
